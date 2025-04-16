@@ -100,7 +100,7 @@ window.addEventListener("DOMContentLoaded", () => {
         // Exibe os dados antes de enviar
         // console.log("Enviando para o checkout:", JSON.stringify(payload));
 
-        fetch("api-front-test.vercel.app/api/checkout", {
+        fetch("https://api-front-test.vercel.app/api/checkout", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(payload),
