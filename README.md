@@ -105,4 +105,15 @@ O formato de envio é um array com um objeto seguindo a seguinte estrutura:
   variant_id: 1,
 }]
 ````
+
+🔗 API de apoio (CORS Proxy)
+
+Para contornar o problema de CORS na requisição de checkout, foi criada uma API intermediária que redireciona os dados do frontend para o endpoint oficial da plataforma.
+
+Você pode acessar o código-fonte da API no seguinte repositório:
+
+👉 [Repositório da API de Checkout Proxy](https://github.com/williamalonso/api-front-test)
+
+
+
 <h3 align="center">William Alonso</h3>
