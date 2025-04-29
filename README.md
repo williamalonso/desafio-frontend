@@ -2,69 +2,52 @@
   <img src="https://app.landingpage.com.br/construtor/assets/imagens/By.png" width="350" title="hover text">
 </p>
 
-# Informações sobre o teste :)
+### 🤔 Informações sobre o teste
 
-O Objetivo deste teste é montar uma página de um produto de um ecommerce
+Este projeto é uma solução para um teste técnico de frontend, cujo objetivo era montar a página de um produto de e-commerce, consumindo uma API para exibir suas informações dinamicamente.
 
-Nosso principal objetivo é ver a sua linha de raciocínio, então ja deixamos preparado uma página HTML e CSS para isto.
+A proposta visa avaliar a lógica de programação, capacidade de integração com APIs e manipulação do DOM utilizando JavaScript puro.
 
-Temos uma api JSON que te fornece os dados de produtos do ecommerce 
-Esses produtos possui varios atributos, como: titulo, imagem, preço além de varias variantes (como cor e tamanho)
-A página HTML de exemplo, é estática, então você terá que preecher todos os dados do produto vindos da api, na página HTML
+---
 
-Esse teste possui alguns niveis, você deverá cumprir as seguintes tarefas:
+## 🚀 Tecnologias
 
-1.  Preencher o campo nome do prudoto, imagem e preço
-2.  Preencher os campos de seleção das variantes (cor, voltagem, etc). É importante você prever que um produto pode ter de zero a 3 variantes
-3.  Quando o cliente escolher uma variante, indicar se o produto tem ou não estoque. (Para mostrar a resposta, fique livre para escolher a forma de exibição, você pode usar um alert(), ou utilizar qualquer forma mais bonita para isso)
-4.  Enviar os dados de compra para o checkout
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-Acreditamos que não exista certo ou errado quando falamos de tecnologia, então não se preocupe: não estamos aqui para julgar nada! Queremos apenas entender a sua linha de raciocínio e criatividade.
+- [Javascript Vanilla](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [HTML 5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [CSS 3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 
-O teste é feito em HTML e Javascript puro, mesmo que a vaga seja para algum framework específico, acredito que não terá dificuldade de aplicar javascript vanilla.
-Não acho que seja viável você tentar neste tempo usar algum framework.
+---
 
-## Tempo para o teste
-O tempo será combinado com o aplicador, encerre o teste assim que o tempo se esgotar, é provavel que não consiga concluir todo o teste.
-Tome cuidado para não gastar tempo demasiado em detalhes pouco relevantes
+### ✨ Sobre a construção do projeto:
 
-## Rodando o projeto
+- Consumimos dados de produtos a partir de uma API pública;
+- Preenchemos dinamicamente o nome, imagem e preço do produto na página;
+- Variantes (como cor, tamanho e voltagem) são renderizadas com base na resposta da API;
+- Ao selecionar variantes, o sistema verifica e informa se há estoque disponível;
+- Ao clicar em "comprar", os dados do produto selecionado são enviados para a API de checkout.
 
-Para agilizar o desenvolvimento, o teste já vem com uma estrutura e um servidor do webpack.
+---
 
-## Requisitos
-Precisamos que tenha algumas coisas para poder rodar:
-- Computador
-- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
+## 🙅 Instalações e usos:
 
-## Como usar
+Voce pode baixar o repositório e executar o arquivo index.html ou acessar o [link](https://desafio-frontend-mu-swart.vercel.app/)
 
-Na raiz do projeto use:
-```
-npm install ou yarn
-```
+---
 
-E para usar o servidor ([webpack](https://webpack.js.org/))
+## 🔌 APIs utilizadas
 
-```
-npm run server ou yarn server
-```
-## APIs
+📦 Produtos
 
-### Carregar Dados dos Produtos
+- Produto 1:
+`https://empreender.nyc3.cdn.digitaloceanspaces.com/static/teste-prod-1.json`
 
-O produto é obtido através de uma requisição `get`
-#### Produto 1
-```
-https://empreender.nyc3.cdn.digitaloceanspaces.com/static/teste-prod-1.json
-```
-#### Produto 2
-```
-https://empreender.nyc3.cdn.digitaloceanspaces.com/static/teste-prod-2.json
-```
+- Produto 2:
+`https://empreender.nyc3.cdn.digitaloceanspaces.com/static/teste-prod-2.json`
 
 
-Exemplo de resposta (Quantidade de propriedades foi reduzida para apenas o que será usado):
+Exemplo de resposta:
 
 ````javascript
 {
@@ -103,14 +86,17 @@ Exemplo de resposta (Quantidade de propriedades foi reduzida para apenas o que s
     ]
 }
 ````
-## API do Checkout
 
-O produto deve ser enviado através do método `post`
+💳 Checkout
+
+Envio dos dados via método POST: `post`
+
 ```
 https://app.landingpage.com.br/api/checkoutloja/LPL2gc/5d87eb644e5631bc6a03f1e43a804e1c
 ```
 
 O formato de envio é um array com um objeto seguindo a seguinte estrutura:
+
 ````javascript
 [{
   values: ["Preto", "p"],
@@ -119,3 +105,4 @@ O formato de envio é um array com um objeto seguindo a seguinte estrutura:
   variant_id: 1,
 }]
 ````
+<h3 align="center">William Alonso</h3>
