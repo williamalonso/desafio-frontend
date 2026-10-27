@@ -32,7 +32,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🙅 Instalações e usos:
 
-Voce pode baixar o repositório e executar o arquivo index.html ou acessar o [link](https://desafio-frontend-mu-swart.vercel.app/)
+Voce pode baixar o repositório e executar o arquivo index.html
 
 ---
 
